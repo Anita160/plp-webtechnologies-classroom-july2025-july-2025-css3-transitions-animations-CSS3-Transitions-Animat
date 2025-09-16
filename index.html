@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kenya Scouts Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🇰🇪 Kenya Scouts Interactive Portal</h1>
+    <button id="toggle-theme">Toggle Day/Night Camp</button>
+  </header>
+<div id="test-box" class="box">KSA</div>
+
+  <main>
+    <!-- Badge Counter -->
+    <section class="counter-section">
+      <h2>🎖 Badges Earned</h2>
+      <p>Count: <span id="counter">0</span></p>
+      <button id="increment-btn">Earn Another Badge</button>
+    </section>
+
+    <!-- Scout FAQ Section -->
+    <section class="faq-section">
+      <h2>🤔 Scouts FAQ</h2>
+      <div class="faq">
+        <button class="faq-question">What is the Kenya Scouts Association?</button>
+        <div class="faq-answer hidden">It's a youth movement focused on developing leadership, discipline, and life skills.</div>
+      </div>
+      <div class="faq">
+        <button class="faq-question">Who can join?</button>
+        <div class="faq-answer hidden">All boys and girls from ages 6+ can join based on age groups.</div>
+      </div>
+    </section>
+
+    <!-- Scout Registration Form -->
+    <section class="form-section">
+      <h2>📝 Join the Scouts</h2>
+      <form id="signup-form" novalidate>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" />
+        <span class="error" id="name-error"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" />
+        <span class="error" id="email-error"></span>
+
+        <label for="password">Create Password:</label>
+        <input type="password" id="password" />
+        <span class="error" id="password-error"></span>
+
+        <button type="submit">Register Now</button>
+        <p id="form-success" class="success hidden">Welcome to the Scouts family! 🎉</p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
